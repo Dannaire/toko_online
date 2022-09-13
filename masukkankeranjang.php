@@ -8,6 +8,7 @@ $dt_buku=mysqli_fetch_array($qry_get_buku);
 $_SESSION['cart'][]=array(
 'id_produk'=>$dt_buku['id_produk'],
 'nama_produk'=>$dt_buku['nama_produk'],
+'harga'=>$dt_buku['harga'],
 'qty'=>$_POST['jumlah_pinjam']
 );
 }
