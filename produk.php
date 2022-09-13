@@ -21,6 +21,7 @@ while($dt_buku=mysqli_fetch_array($qry_buku)){
 class="card-img-top">
 <div class="card-body">
 <h5 class="card-title"><?=$dt_buku['nama_produk']?></h5>
+<h5 class="card-title"><?=$dt_buku['harga']?></h5>
 <p class="card-text"><?=substr($dt_buku['deskripsi'],
 0,20)?></p>
 <a
